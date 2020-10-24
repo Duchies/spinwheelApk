@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4DFB4"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+
+        android:id="@+id/relativeLayoutSpinner"
+        >
+        <rubikstudio.library.LuckyWheelView
+
+            android:id="@+id/luckyWheelViewMain"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lkwBackgroundColor="#3A3A3A"
+            app:lkwCenterImage="@drawable/wheel1"
+            app:lkwCursor="@drawable/spin"
+
+
+
+            >
+
+        </rubikstudio.library.LuckyWheelView>
+
+
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_below="@id/relativeLayoutSpinner"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="playGame"
+        android:text="play"
+        android:textColor="@color/white"
+
+        >
+
+    </Button>
+
+
+
+
+
+</RelativeLayout>
